@@ -2,15 +2,15 @@
 
 ## Usage:
 
-node1 is the node to start first, since you will see the address to join the cluster, please make a note.
+`node1` is the node to start first, since you will see the address to join the cluster, please make a note.
 
 ```
 $ go run node1.go
 // => node1 at 192.168.0.25: 7946
 ```
 
-node2 is a node that only joins the cluster and finishes.  
-When you start up using the address of node 1 above, the member information participating in the cluster is displayed.
+`node2` is a node that only joins the cluster and finishes.  
+When you start up using the address of `node1` above, the member information participating in the cluster is displayed.
 
 ```
 $ go run node2.go --join 192.168.0.25:7946
@@ -18,8 +18,8 @@ $ go run node2.go --join 192.168.0.25:7946
 // => Member: node2(192.168.0.25: 7947)
 ```
 
-node3 is a node that waits for a certain period of time after joining the cluster,  
-by exchanging the boot order of node2 and node3, you can see that participating members are changing.
+`node3` is a node that waits for a certain period of time after joining the cluster,  
+by exchanging the boot order of `node2` and `node3`, you can see that participating members are changing.
 
 ```
 # session1
@@ -37,5 +37,5 @@ $ go run node2.go --join 192.168.0.25:7946
 ## Note:
 
 Make sure `memberlist.Config#Name` (used as the node name) is unique.  
-Also, make sure BindPort and AdvertisePort are unique addresses.  
-It is used to communicate between memberlists.
+Also, make sure `BindPort` and `AdvertisePort` are unique addresses.  
+It is used to communicate between nodes.
