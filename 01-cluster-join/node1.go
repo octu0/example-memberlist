@@ -26,8 +26,9 @@ func action(c *cli.Context) {
 }
 
 func wait_signal(){
-  signal_chan := make(chan os.Signal, 1)
+  signal_chan := make(chan os.Signal, 2)
   signal.Notify(signal_chan, syscall.SIGTERM)
+  signal.Notify(signal_chan, syscall.SIGINT)
   for {
     select {
     case s := <-signal_chan:
