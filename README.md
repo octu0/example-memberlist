@@ -1,4 +1,4 @@
-# memberlist-example
+# example-memberlist
 Example implementation of Hashicorp [memberlist](https://github.com/hashicorp/memberlist).
 
 There are several implementation examples.
