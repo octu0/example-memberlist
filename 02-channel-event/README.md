@@ -86,10 +86,10 @@ implement the method of EventDelegate Interface and assign it to Config#Events
 ```
 type MyEventDelegate struct {}
 func (d *MyEventDelegate) NotifyJoin(node *memberlist.Node) {
-	// join event
+  // join event
 }
 func (d *MyEventDelegate) NotifyLeave(node *memberlist.Node) {
-	// leave event
+  // leave event
 }
 func (d *MyEventDelegate) NotifyUpdate(node *memberlist.Node) {
   // update event
