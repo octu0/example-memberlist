@@ -78,6 +78,33 @@ foo   => 192.168.0.25:7949 (moves 2 times)
 bar   => 192.168.0.25:7947 (moves 1 times)
 ```
 
+## Note:
+
+EventDelegate to receive event of join/leave/update of memberlist nodes.  
+implement the method of EventDelegate Interface and assign it to Config#Events
+
+```
+type MyEventDelegate struct {}
+func (d *MyEventDelegate) NotifyJoin(node *memberlist.Node) {
+	// join event
+}
+func (d *MyEventDelegate) NotifyLeave(node *memberlist.Node) {
+	// leave event
+}
+func (d *MyEventDelegate) NotifyUpdate(node *memberlist.Node) {
+  // update event
+}
+
+conf := memberlist.DefaultLocalConfig()
+conf.Events = new(MyEventDelegate)
+list, err  := memberlist.Create(conf)
+if err != nil {
+	log.Fatal(err)
+}
+```
+
+see also - https://github.com/hashicorp/memberlist/blob/master/event_delegate.go
+
 ## NextStep:
 
 - Distributed cache (like memcached)
