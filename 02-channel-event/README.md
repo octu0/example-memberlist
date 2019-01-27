@@ -81,7 +81,7 @@ bar   => 192.168.0.25:7947 (moves 1 times)
 ## Note:
 
 EventDelegate to receive event of join/leave/update of memberlist nodes.  
-implement the method of EventDelegate Interface and assign it to Config#Events
+implement the method of [EventDelegate](https://godoc.org/github.com/hashicorp/memberlist#EventDelegate) Interface and assign it to [Config#Events](https://godoc.org/github.com/hashicorp/memberlist#Config)
 
 ```
 type MyEventDelegate struct {}

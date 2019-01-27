@@ -42,7 +42,7 @@ It is used to communicate between nodes.
 
 ## Configure:
 
-this example using `DefaultLocalConfig` because it is intended for testing in the local environment.  
+this example using [DefaultLocalConfig](https://godoc.org/github.com/hashicorp/memberlist#DefaultLocalConfig) because it is intended for testing in the local environment.  
 If you want to test over the LAN/WAN network please set the appropriate Timeout / Interval.
 
 ```
