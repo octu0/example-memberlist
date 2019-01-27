@@ -38,7 +38,7 @@ $ go run c.go node3.go --join 192.168.0.25:7947
 // => node3 search world => 192.168.0.25:7948
 ```
 
-timeline
+### Timeline:
 
 ```
 +                                         +                                      +
