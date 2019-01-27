@@ -1,4 +1,4 @@
-# cluster join/leave example
+# cluster join/leave
 
 ## Usage:
 
