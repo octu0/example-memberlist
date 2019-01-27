@@ -23,23 +23,21 @@ $ go run c.go node2.go --join 192.168.0.25:7947
 You can see that the information on `node1`, `node2` changes over time.
 
 ```
-node1 region: ap-northeast-1, zone: 1a, shard: 100, weight: 0
-node2 region: ap-northeast-1, zone: 1a, shard: 100, weight: 0
 ------------------
 node1 region: ap-northeast-1, zone: 1a, shard: 100, weight: 0
-node2 region: ap-northeast-1, zone: 1a, shard: 100, weight: 3
+node2 region: ap-northeast-1, zone: 1c, shard: 100, weight: 0
 ------------------
 node1 region: ap-northeast-1, zone: 1a, shard: 100, weight: 0
-node2 region: ap-northeast-1, zone: 1a, shard: 100, weight: 6
+node2 region: ap-northeast-1, zone: 1c, shard: 100, weight: 3
 ------------------
 node1 region: ap-northeast-1, zone: 1a, shard: 100, weight: 0
-node2 region: ap-northeast-1, zone: 1a, shard: 100, weight: 9
+node2 region: ap-northeast-1, zone: 1c, shard: 100, weight: 6
 ------------------
 node1 region: ap-northeast-1, zone: 1a, shard: 100, weight: 0
-node2 region: ap-northeast-1, zone: 1a, shard: 100, weight: 12
+node2 region: ap-northeast-1, zone: 1c, shard: 100, weight: 9
 ------------------
 node1 region: ap-northeast-1, zone: 1a, shard: 100, weight: 0
-node2 region: ap-northeast-1, zone: 1a, shard: 100, weight: 15
+node2 region: ap-northeast-1, zone: 1c, shard: 100, weight: 12
 ------------------
 ```
 
