@@ -71,3 +71,9 @@ m := &MyMessage{
 }
 list.SendReliable(node, m.Bytes())
 ```
+
+## NextStep:
+
+- RPC (Remote Procedure Call)
+- P2P (node communication)
+- Proxy / Gateway
