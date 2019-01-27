@@ -14,7 +14,7 @@ func action(c *cli.Context) {
   d := new(MyDelegate)
   d.meta = MyMetaData{
     Region: "ap-northeast-1",
-    Zone:   "1a",
+    Zone:   "1c",
     ShardId: 100,
     Weight:  0,
   }
