@@ -45,5 +45,3 @@ func wait_signal(cancel context.CancelFunc){
     }
   }
 }
-
-
