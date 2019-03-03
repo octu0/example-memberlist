@@ -28,9 +28,8 @@ $ go run c.go node2.go --join 192.168.0.25:7947
 
 ```
                                       +
-                                      |
   node1 says                          | node2 says
-+-------------------------------------------------------------------------------+
++-------------------------------------|-----------------------------------------+
                                       | send to node1 msg: key=ping value=0
   received msg: key=ping value=0      | 
   send to node2 msg: key=pong value=1 |
